@@ -40,6 +40,16 @@ public class Mod : ModBase
          */
 
         this.themeConfig.AddSetting(nameof(this.config.SMT1), "SMT1.theme.pme");
+        this.themeConfig.AddSetting(nameof(this.config.SMT1), "SMT1_alt1.theme.pme");
+        this.themeConfig.AddSetting(nameof(this.config.SMT1), "SMT1_alt2.theme.pme");
+        this.themeConfig.AddSetting(nameof(this.config.SMT1), "SMT1.theme.pme");
+        this.themeConfig.AddSetting(nameof(this.config.SMT1), "SMT1.theme.pme");
+        this.themeConfig.AddSetting(nameof(this.config.SMT1), "SMT1.theme.pme");
+        this.themeConfig.AddSetting(nameof(this.config.SMT1), "SMT1.theme.pme");
+        this.themeConfig.AddSetting(nameof(this.config.SMT1), "SMT1.theme.pme");
+        this.themeConfig.AddSetting(nameof(this.config.SMT1), "SMT1.theme.pme");
+        this.themeConfig.AddSetting(nameof(this.config.SMT1), "SMT1.theme.pme");
+        this.themeConfig.AddSetting(nameof(this.config.SMT1), "SMT1.theme.pme");
 
 
         /*-------------------------------------------------------*/
@@ -72,4 +82,16 @@ public class Config : Configurable<Config>
     [Description("Normal battles will play the Normal Battle theme from SMT 1.\n\nBattle theme: Normal Battle\nVictory theme: Level Up")]
     [DefaultValue(true)]
     public bool SMT1 { get; set; } = true;
+    
+    [Category("Shin Megami Tensei")]
+    [DisplayName("Boss Battle")]
+    [Description("Normal battles will play the Boss Battle theme from SMT 1.\n\nBattle theme: Boss Battle\nVictory theme: Level Up")]
+    [DefaultValue(true)]
+    public bool SMT1_alt1 { get; set; } = true;
+
+    [Category("Shin Megami Tensei")]
+    [DisplayName("Ginza")]
+    [Description("Normal battles will play the Ginza theme from SMT 1.\n\nBattle theme: Ginza\nVictory theme: Level Up")]
+    [DefaultValue(true)]
+    public bool SMT1_alt2 { get; set; } = true;
 }
