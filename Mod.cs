@@ -68,8 +68,8 @@ public class Config : Configurable<Config>
     /* ADD CONFIG SETTINGS HERE */
 
     [Category("Shin Megami Tensei")]
-    [DisplayName("Normal Battle / Boss (Shin Megami Tensei)")]
-    [Description("Context dependent battle music from Shin Megami Tensei. Normal\nbattles will play Normal Battle, while\nadvantage battles will play Boss.\n\nBattle theme: Normal Battle\nAdvantage battle theme: Boss\nVictory theme: Level Up")]
+    [DisplayName("Normal Battle")]
+    [Description("Normal battles will play the Normal Battle theme from SMT 1.\n\nBattle theme: Normal Battle\nVictory theme: Level Up")]
     [DefaultValue(true)]
     public bool SMT1 { get; set; } = true;
 }
